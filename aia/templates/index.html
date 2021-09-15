@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AIA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="../static/index.css">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../static/index.js"></script>
+</head>
+<body>
+
+<div class="App">
+<section>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#model">Lets Start</a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+<section id="home">
+
+<u><h1>Auto Image Annotation(AIA)</h1></u>
+
+<p>Auto image annotation is the task to automatically assign labels to image.which the use to train computer vision models.</p>
+
+<div id="team">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Ajay Singh Bhandari(ML & Backend)</h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Go to Github</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Hemant Singh (Front End)</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+
+
+<section id="model">
+
+  <header class='App-header'>
+    <p><u>
+      Auto Image Annotation
+    </u></p>
+    <div className="pre_img">
+      <span><img id="imagebox" src=""></span>
+    </div>
+    <form>
+      <input id="imageinput" type="file" name="image" onchange="readUrl(this)">
+    </form>
+  <button name="send" id = "sendbutton">Run</button>
+</header>
+
+</section>
+
+</div>
+</body>
+</html>
